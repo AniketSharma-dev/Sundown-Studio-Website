@@ -1,0 +1,493 @@
+* {
+    margin: 0px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Neuehaasdisplay mediu, sans-serif;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+#main {
+    position: relative;
+    z-index: 99;
+}
+
+#page1 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #efeae3;
+    position: relative;
+    padding: 0 2vw;
+}
+
+nav {
+    padding: 2vw 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#navlink>ul {
+    display: flex;
+    gap: 15px;
+}
+
+#navlink>ul>li {
+    font-weight: 500;
+    position: relative;
+    color: rgba(0, 0, 0, 0.69);
+    font-size: 18px;
+    padding: 10px 20px;
+    border: 1px solid rgb(185, 178, 178);
+    border-image: initial;
+    border-radius: 50px;
+    display: inline-block;
+    overflow: hidden;
+}
+
+ul li::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    border-radius: 10%;
+    top: 100%;
+    left: 0;
+    transition: ease-in-out 0.3s;
+}
+
+ul>li:hover::after {
+    display: block;
+    border-radius: 50px;
+    position: absolute;
+    top: 0;
+}
+
+ul>li>a {
+    text-decoration: none;
+    color: #000000b0;
+    position: relative;
+    z-index: 8;
+}
+
+ul li:hover a {
+    color: white;
+}
+
+#Hero-Section {
+    width: 100%;
+    height: 65vh;
+    /* background-color: #fff; */
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 2.5vw;
+}
+
+hr {
+    border: 1px solid rgb(155, 150, 150);
+}
+
+#left h3 {
+    width: 25vw;
+    font-size: 1.8vw;
+    line-height: 2vw;
+}
+
+#right h1 {
+    font-weight: 700;
+    font-size: 9vw;
+    line-height: 0.8;
+    text-align: right;
+    letter-spacing: -0.03em;
+}
+
+#page1 video {
+    border-radius: 20px;
+    margin-top: 4vw;
+    position: relative;
+    width: 100%;
+}
+
+.hero-shape {
+    position: absolute;
+    width: 40vw;
+    height: 40vw;
+    right: 0px;
+    top: 70vh;
+}
+
+.hero-1 {
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-left-radius: 50%;
+    filter: blur(20px);
+    background: rgb(254, 50, 10);
+    position: absolute;
+}
+
+.hero-2 {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    filter: blur(20px);
+    background: linear-gradient(rgb(254, 50, 10), rgb(254, 63, 10));
+    position: absolute;
+    animation: anime 5s linear infinite alternate;
+}
+
+.hero-3 {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    filter: blur(20px);
+    background: linear-gradient(rgb(254, 50, 10), rgb(254, 63, 10));
+    position: absolute;
+    animation: anime1 5s linear infinite alternate;
+}
+
+@keyframes anime {
+    from {
+        transform: translate(5%, -5%);
+    }
+
+    to {
+        transform: translateY(-20%, 30%);
+    }
+}
+
+@keyframes anime1 {
+    from {
+        transform: translate(10%, -5%) skew(0deg);
+    }
+
+    to {
+        transform: translate(-20%, 30%)skew(-12deg);
+    }
+}
+
+/* ********** PAGE 2 ********** */
+
+#page2 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #efeae3;
+    padding: 8vw 0;
+}
+
+.moving-text {
+    white-space: nowrap;
+    overflow-x: auto;
+}
+
+.moving-text::-webkit-scrollbar {
+    display: none;
+}
+
+.container {
+    white-space: nowrap;
+    display: inline-block;
+    animation: move 10s linear infinite;
+}
+
+.moving-text h1 {
+    font-size: 9vw;
+    display: inline-block;
+}
+
+.gola {
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #fe320a;
+    margin: 1vw 2vw;
+}
+
+@keyframes move {
+    from {
+        transform: translateX(0);
+
+    }
+
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+.page2-bottom {
+    height: 80vh;
+    width: 100%;
+    padding: 4.5vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.page2-bottom h1 {
+    font-size: 4vw;
+    flex-basis: 60%;
+    line-height: 4vw;
+    z-index: 1;
+}
+
+.image-section {
+    flex-basis: 20%;
+}
+
+.image-section img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.image-section p {
+    margin-top: 2vw;
+    font-weight: 200;
+    font-size: 1vw;
+}
+
+
+.goeey {
+    height: 30vw;
+    width: 30vw;
+    border-radius: 50%;
+    filter: blur(20px);
+    background: linear-gradient(to top right, #ff2d03, #f5641b);
+    position: absolute;
+    top: 58%;
+    left: 25%;
+    animation: anime1 6s linear infinite alternate;
+}
+
+
+/* ********** PAGE 3 ********** */
+
+#page3 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #efeae3;
+    padding: 0 4vw 0px;
+}
+
+.featured {
+    display: flex;
+    text-align: center;
+    margin: 0 20px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#fixed-image {
+    height: 30vw;
+    width: 24vw;
+    /* background-color: red; */
+    border-radius: 15px;
+    z-index: 8;
+    position: fixed;
+    left: 50%;
+    top: 25%;
+    display: none;
+    background-size: cover;
+    background-position: center center;
+    /* z-index: 99; */
+    pointer-events: none;
+}
+
+.elem {
+    height: 150px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 0 2vw;
+    border-bottom: 1px solid rgb(104, 101, 101);
+    overflow: hidden;
+}
+
+.elem p {
+    font-size: 1em;
+    color: rgb(150, 150, 150);
+    font-weight: 100;
+}
+
+.elem .overlap {
+    width: 100%;
+    height: 150px;
+    bottom: 100%;
+    left: 0;
+    background: orange;
+    position: absolute;
+    transition: 0.2s;
+}
+
+
+.elem:hover .overlap {
+    position: absolute;
+    bottom: 0;
+}
+
+.elem h2 {
+    font-size: 3vw;
+    z-index: 9;
+}
+
+.btn {
+    width: 100%;
+    margin: 4vh 4vw 0 4vw;
+    background: rgb(239, 234, 227);
+    padding-bottom: 20px;
+}
+
+.btn button {
+    width: 200px;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-weight: 400;
+    padding: 20px;
+    border-radius: 50px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: gray;
+    border-image: initial;
+    background: rgb(239, 234, 227);
+    transition: all 0.3s ease;
+
+}
+
+.btn button:hover {
+    color: white;
+    background-color: black;
+}
+
+/* ********** PAGE 4 ********** */
+
+
+#page4 {
+    width: 100%;
+    min-height: 90vh;
+    background-color: #efeae3;
+}
+
+.planner-container {
+    padding: 30px;
+}
+
+.planner {
+    border-radius: 20px;
+    width: 100%;
+    height: 100vh;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.plans {
+    width: 40%;
+    color: white;
+    margin-left: 10vw;
+}
+
+.plans h1 {
+    font-size: 4vw;
+    margin: 0;
+    padding: 0;
+}
+
+.plans h1::before {
+    content: "";
+    border-left: 3px solid white;
+    padding: 1px 10px;
+}
+
+.plans h1.red-border::before {
+    content: "";
+    border-left: 3px solid red;
+    padding: 1px 10px;
+}
+
+.plans p {
+    padding-right: 11rem;
+    /* font-size: 14px; */
+    margin-top: 30px;
+}
+
+.plans-img {
+    width: 60%;
+    /* Set the image container to 60% of the space */
+    height: 100%;
+}
+
+.plans-img img {
+    width: 100%;
+    /* Ensure the image takes up the entire container */
+    height: 100%;
+    /* Adjust image height to cover container */
+    object-fit: cover;
+    /* Ensure the image fits well within the container */
+    background-position: center;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+/* ********** PAGE 4 ********** */
+
+#page5 {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+
+}
+
+
+#footer {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    padding: 1vw 3vw;
+    position: fixed;
+    bottom: 0;
+    z-index: 77;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    /* position: relative; */
+}
+
+#footer h1 {
+    font-size: 21vw;
+}
+
+.footer-contact {
+    width: 100%;
+    height: 100vh;
+    /* background: red; */
+    /* display: flex; */
+
+}
+
+.copyright {
+    width: 100%;
+    height: 10vh;
+    border: none;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}

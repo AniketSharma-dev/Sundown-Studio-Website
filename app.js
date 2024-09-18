@@ -1,0 +1,47 @@
+const scroll = new LocomotiveScroll({
+  el: document.querySelector("#main"),
+  smooth: true,
+});
+
+
+
+var elemC = document.querySelector("#elem-container"); // for selecting elem container
+var fixed = document.querySelector("#fixed-image"); // selecting fixed-image
+elemC.addEventListener("mouseenter", function () {
+  // on mouseenter
+  fixed.style.display = "block"; // this style work
+});
+elemC.addEventListener("mouseleave", function () {
+  // on mouse leave
+  fixed.style.display = "none"; // this style work
+});
+
+// for selecting all and doing dynamic
+
+var elems = document.querySelectorAll(".elem"); // if you console it then it return nodelist which is similler to array
+elems.forEach(function (e) { // forEach run for the limit of array 
+  e.addEventListener("mouseenter", function () { // adding mouseenter event to e = the div which coming on hover
+    var image = e.getAttribute("data-image"); // defining out atrribute which give the image of the selected div
+    fixed.style.backgroundImage = `url(${image})`; // adding the image to the fixed which we got from every div
+  });
+});
+
+
+
+// ^^^^^^ test &&&&&&7
+
+// var a = document.querySelector("#elen1");
+
+// var b= a.getAttribute("data-image")
+// console.log(b);
+
+
+
+//  this is for selecting single image {{{{{{}}}}}}
+
+// var elem1 = document.querySelector("#elem1");
+// elem1.addEventListener("mouseenter", function () {
+//   var image = elem1.getAttribute("data-image");
+//   fixed.style.backgroundImage = `url(${image})`;
+// });
+
