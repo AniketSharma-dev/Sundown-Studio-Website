@@ -41,4 +41,4 @@ To set up this project locally, follow these steps:
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/yourusername/sundown-studio.git
+   git clone https://github.com/Aniketsharmadev/Sundown-Studio-Website.git
