@@ -10,30 +10,44 @@
             type="image/x-icon" />
         <link
             rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link
+            rel="stylesheet"
             href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.css" />
         <link rel="stylesheet" href="style.css" />
     </head>
 
     <body>
         <div id="fixed-image"></div>
+
         <div id="main">
+            <div id="navMobile"></div>
+
             <div id="page1">
                 <nav>
                     <img
                         src="https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15c2_Sundown%20logo.svg"
                         alt="Logo" />
-                    <div id="navlink">
+                    <div id="navLink">
                         <ul>
                             <li><a href="#Work">Work </a></li>
                             <li><a href="#Studio">Studio</a></li>
                             <li><a href="#Contact">Contact</a></li>
                         </ul>
                     </div>
+                    <div id="navMenu">
+                        <ul>
+                            <li >
+                                <span>Menu</span>
+                            </li>
+                        </ul>
+                    </div>
                 </nav>
                 <div id="Hero-Section">
                     <div id="left">
                         <h3>
-                            Sundown is a multi-disciplinary studio focused on
+                            Sundown is a multi-disciplinary studio focused
+                            on
                             creating unique,
                             end-to-end experiences and environments.
                         </h3>
@@ -56,7 +70,7 @@
                     loop
                     muted
                     autoplay
-                    src="https://sundownstudios.netlify.app/video.mp4"></video>
+                    src="./assets/video.mp4"></video>
             </div>
             <div id="page2">
                 <div class="moving-text">
@@ -87,9 +101,11 @@
                 </div>
                 <div class="page2-bottom">
                     <h1>
-                        We are a group of design-driven, goal-focused creators,
+                        We are a group of design-driven, goal-focused
+                        creators,
                         producers,
-                        and designers who believe that the details make all the
+                        and designers who believe that the details make all
+                        the
                         difference.
                     </h1>
                     <div class="image-section">
@@ -99,9 +115,11 @@
                         <p>
                             We love to create, we love to solve, we love to
                             collaborate, and
-                            we love to turn amazing ideas into reality. We’re
+                            we love to turn amazing ideas into reality.
+                            We’re
                             here to partner
-                            with you through every step of the process and know
+                            with you through every step of the process and
+                            know
                             that
                             relationships are the most important things we
                             build.
@@ -209,35 +227,191 @@
                         </svg>
                     </button>
                 </div>
-            </div>
-            <div id="page4">
                 <div class="planner-container">
                     <div class="planner">
                         <div class="plans">
                             <h1 class="red-border">Design</h1>
-                            <h1 style="color: grey;">Project</h1>
-                            <h1 style="color: grey;">Execution</h1>
-                            <p>Our team works with our clients to refine an idea
-                                and
-                                concept into an executable design. We create a
-                                final
-                                design that encompasses the brand narrative to
-                                bring
-                                stories to life and provide end-to-end design
-                                solutions from concepts,design,and architectural
-                                drawings to 3D renderings </p>
+                            <h1 style="color: grey">Project</h1>
+                            <h1 style="color: grey">Execution</h1>
+                            <p>
+                                Our team works with our clients to refine an
+                                idea and concept
+                                into an executable design. We create a final
+                                design that
+                                encompasses the brand narrative to bring
+                                stories
+                                to life and
+                                provide end-to-end design solutions from
+                                concepts,design,and
+                                architectural drawings to 3D renderings
+                            </p>
                         </div>
                         <div class="plans-img">
                             <img
                                 src="https://architizer-prod.imgix.net/mediadata/projects/282012/d6857e63.jpg?w=1080&cs=strip&auto=format,compress&q=60"
-                                alt="image" width="400" height="600">
+                                alt="image"
+                                width="400"
+                                height="600" />
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div id="page5" ></div>
+            <div id="page4">
+                <div class="featured">
+                    <div
+                        style="
+              height: 10px;
+              width: 10px;
+              margin: 4px 5px;
+              font-weight: normal;
+            "
+                        class="gola"></div>
+                    <h3>Who we Work with</h3>
+                </div>
+
+                <!-- Swiper -->
+                <div class="swiper mySwiper">
+                    <div class="swiper-wrapper">
+                        <div
+                            class="swiper-slide"
+                            style="border-left: 1px solid rgba(0, 0, 0, 0.187)">
+                            <img
+                                src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15fd_Arc%E2%80%99teryx.svg"
+                                alt
+                                srcset />
+                            <p>
+                                Production and design along with install
+                                oversight and execution
+                                support for the SoHo store opening on
+                                Broadway
+                                St, New York.
+                                Also working on creative and production work
+                                for
+                                a new store
+                                opening in Glendale, California.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15fe_Hunter.svg"
+                                alt
+                                srcset />
+                            <p>
+                                Design and Production partner for Hunter
+                                Holiday
+                                2022 Pop-in at
+                                Nordstrom 57th St, New York, including
+                                activations in Women’s,
+                                Men’s and Kid’s zones. Thirty-five (35)
+                                additional smaller
+                                take-downs in Nordstrom stores across the
+                                US.
+                                Concept design for
+                                Holiday boot customization events in stores
+                                across winter 2022.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1601_MediaLink.svg"
+                                alt
+                                srcset />
+                            <p>
+                                Production and design along with install
+                                oversight and execution
+                                support for the SoHo store opening on
+                                Broadway
+                                St, New York.
+                                Also working on creative and production work
+                                for
+                                a new store
+                                opening in Glendale, California.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1600_Converse.svg"
+                                alt
+                                srcset />
+                            <p>
+                                Creative Concepting, Design, Design
+                                Management,
+                                Project
+                                Management, and execution of work from
+                                concept
+                                to installation
+                                across the Country. Cross functional
+                                communication and
+                                management of third party partners.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b15fe_Hunter.svg"
+                                alt
+                                srcset />
+                            <p>
+                                Design and Production partner for Hunter
+                                Holiday
+                                2022 Pop-in at
+                                Nordstrom 57th St, New York, including
+                                activations in Women’s,
+                                Men’s and Kid’s zones. Thirty-five (35)
+                                additional smaller
+                                take-downs in Nordstrom stores across the
+                                US.
+                                Concept design for
+                                Holiday boot customization events in stores
+                                across winter 2022.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1601_MediaLink.svg"
+                                alt
+                                srcset />
+                            <p>
+                                Production and design along with install
+                                oversight and execution
+                                support for the SoHo store opening on
+                                Broadway
+                                St, New York.
+                                Also working on creative and production work
+                                for
+                                a new store
+                                opening in Glendale, California.
+                            </p>
+                        </div>
+                        <div class="swiper-slide">
+                            <img
+                                src="https://assets-global.website-files.com/64d3dd9edfb41666c35b15d4/64d3dd9edfb41666c35b1600_Converse.svg"
+                                alt
+                                srcset />
+                            <p>
+                                Creative Concepting, Design, Design
+                                Management,
+                                Project
+                                Management, and execution of work from
+                                concept
+                                to installation
+                                across the Country. Cross functional
+                                communication and
+                                management of third party partners.
+                            </p>
+                        </div>
+                    </div>
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+            </div>
+            <!-- <div id="page5">
+                <div style="height: 100vh; width: 100%; background: #00000000">
+                    <div
+                        style="height: 100vh; width: 100%; background: #00000000"></div>
+                </div>
+            </div> -->
+            <div id="page5" style="min-height:115vh"></div>
         </div>
+
         <footer>
             <div id="footer">
                 <div class="footer-contact">
@@ -247,18 +421,33 @@
                         <h2>Contact</h2>
                     </div>
                     <div>
-                        <p>Get industry insights and creative inspiration
-                            straight to your inbox.</p>
-                        <button>Email Address 
-                            <svg width="33" height="10" viewBox="0 0 33 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M1 5H31" stroke="currentColor" stroke-linecap="square"></path>
-                                <path d="M28.5 1.5L32 5L28.5 8.5"stroke="currentColor" stroke-linecap="square"></path>
+                        <p>
+                            Get industry insights and creative inspiration
+                            straight to your
+                            inbox.
+                        </p>
+                        <button>
+                            Email Address
+                            <svg
+                                width="33"
+                                height="10"
+                                viewBox="0 0 33 10"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M1 5H31"
+                                    stroke="currentColor"
+                                    stroke-linecap="square"></path>
+                                <path
+                                    d="M28.5 1.5L32 5L28.5 8.5"
+                                    stroke="currentColor"
+                                    stroke-linecap="square"></path>
                             </svg>
                         </button>
                     </div>
                 </div>
                 <h1>Sundown</h1>
-                <div style="border-top: 1px solid #eeeeeeea;" class="copyright">
+                <div style="border-top: 1px solid #eeeeeeea" class="copyright">
                     <h6>&copy; Copyright 2024 Aniket Sharma</h6>
                     <h6>India</h6>
                     <h6>Instagram</h6>
@@ -268,17 +457,19 @@
         </footer>
 
         <script
-            src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+            src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
         <script
+            src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+        <!-- <script
             src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
             integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
             crossorigin="anonymous"
-            referrerpolicy="no-referrer"></script>
-        <script
+            referrerpolicy="no-referrer"></script> -->
+        <!-- <script
             src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
             integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
             crossorigin="anonymous"
-            referrerpolicy="no-referrer"></script>
+            referrerpolicy="no-referrer"></script> -->
         <script src="app.js"></script>
     </body>
 </html>
