@@ -651,16 +651,20 @@ hr {
     font-size: 8vw;
     padding: 20px;
 }
-.inside h2{
+
+.inside h2 {
     display: inline-block;
 }
-.inside h2 a{
+
+.inside h2 a {
     text-decoration: none;
     color: black;
 }
-.inside h2 a:hover{
+
+.inside h2 a:hover {
     color: #f5641b;
 }
+
 .footer-shape {
     position: absolute;
     width: 100vw;
@@ -719,9 +723,10 @@ hr {
 
     .loader h1 {
         font-size: 9vw;
-        
-    
+
+
     }
+
     #page1 {
         padding: 6vw 5vw;
     }
@@ -806,6 +811,7 @@ hr {
     }
 
     .page2-bottom {
+        height: 100vh;
         padding: 9vw 5vw;
         flex-direction: column;
     }
@@ -901,7 +907,8 @@ hr {
         justify-content: space-evenly;
         flex-direction: column;
     }
-    .contact-buttom p{
+
+    .contact-buttom p {
         width: 100%;
     }
 
