@@ -72,7 +72,7 @@ function menuAnimation() {
   var flag = 0;
   menu.addEventListener("click", function () {
     if (flag == 0) {
-      full.style.top = -20%;
+      full.style.top = "-20%';
       img.style.opacity = 0;
       flag = 1;
     } else {
