@@ -72,11 +72,11 @@ function menuAnimation() {
   var flag = 0;
   menu.addEventListener("click", function () {
     if (flag == 0) {
-      full.style.top = 0;
+      full.style.top = -20%;
       img.style.opacity = 0;
       flag = 1;
     } else {
-      full.style.top = "-120%";
+      full.style.top = "-100%";
       img.style.opacity = 1;
       flag = 0;
     }
