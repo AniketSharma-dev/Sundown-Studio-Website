@@ -76,7 +76,7 @@ function menuAnimation() {
       img.style.opacity = 0;
       flag = 1;
     } else {
-      full.style.top = "-100%";
+      full.style.top = "-120%";
       img.style.opacity = 1;
       flag = 0;
     }
